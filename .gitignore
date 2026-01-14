@@ -1,0 +1,32 @@
+# -------------------------
+# R / RStudio junk
+# -------------------------
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+*.Rproj
+.Rprofile
+
+# -------------------------
+# renv (keep renv.lock)
+# -------------------------
+renv/library/
+renv/staging/
+
+# -------------------------
+# Do NOT publish these scripts
+# -------------------------
+src/kmer_matrices.R
+src/ks_tests.R
+
+# -------------------------
+# Data: keep only what you said
+# -------------------------
+data/kmer_output/
+data/simulation_outputs/
+
+# OS / misc
+Thumbs.db
+.DS_Store
+README.html

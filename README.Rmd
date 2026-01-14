@@ -1,0 +1,81 @@
+---
+title: "Detecting Sequence Motifs Associated with Continuous Biological Traits"
+---
+
+## Overview
+
+This project implements an R-based pipeline for detecting sequence motifs associated
+with **continuous biological traits**, without discretizing the data into binary
+labels. The approach combines k-mer–level statistical association testing with
+downstream processing that aggregates significant k-mers into biologically
+interpretable sequence motifs.
+
+Conceptually, the full pipeline includes sequence input, k-mer matrix construction,
+statistical testing and motif discovery. Due to authorship
+constraints, the k-mer matrix generation and statistical testing steps are not
+included here; therefore, the full pipeline cannot be run end-to-end, and each script
+is designed to be run independently.
+
+For full methodological details and results, see the accompanying report.
+
+---
+
+## What this repository provides
+
+- **`from_kmers_to_motifs.R`**  
+  Post-processing pipeline that converts precomputed significant k-mers into sequence
+  motifs using genomic window merging, distance-based clustering, and multiple
+  sequence alignment.
+
+- **`simulate_genome.R`**  
+  A controlled genome simulation framework used to generate all data analyzed in
+  this repository.
+
+  The primary purpose of the simulation is to systematically evaluate where the
+  k-mer–based algorithm succeeds and where it fails. By providing full control over
+  key parameters—such as motif structure, prevalence, strength of effect on the
+  biological trait, background sequence composition, and noise—the simulation enables
+  isolation of individual factors and analysis of their impact on detection power and
+  motif recovery.
+
+
+- **`power_analysis.R`**  
+  Standalone power analysis of KS and Mann–Whitney tests under varying effect sizes     and multiple-testing regimes.  
+  This script is independent of the main pipeline and addresses methodological
+  questions related to statistical testing.
+
+---
+
+## Repository structure
+
+```text
+kmer-to-motif-discovery/
+├── src/             Analysis scripts
+├── data/            Simulated data
+├── paper/           Final written report
+├── renv/            R dependency management
+├── renv.lock        Locked package versions
+└── README.Rmd
+```
+
+---
+
+## Environment setup (renv)
+
+This project uses renv to ensure reproducible package versions.
+To recreate the analysis environment:
+
+```r
+install.packages("renv")
+renv::restore()
+```
+
+This command installs the exact R package versions specified in renv.lock, allowing
+the code to be run without manual dependency management.
+
+---
+
+## Context
+
+This work was developed as part of research conducted in a computational genetics
+laboratory (Dr. Michal Rabani, Department of Genetics).  
