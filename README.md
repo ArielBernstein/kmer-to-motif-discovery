@@ -177,6 +177,17 @@ there.
 
 ## What this repository provides
 
+**Note on code availability and reproducibility**
+
+Due to intellectual property and data usage restrictions, parts of the
+original analysis pipeline developed in the lab cannot be shared
+publicly. As a result, the full end-to-end pipeline cannot currently be
+executed from this repository as a single automated workflow.
+
+All scripts provided here are self-contained and runnable independently,
+and collectively illustrate the full methodology, statistical reasoning,
+and sequence analysis approach used in the project.
+
 ### Analysis scripts (`src/`)
 
 - **`from_kmers_to_motifs.R`**  
