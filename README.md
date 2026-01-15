@@ -79,6 +79,34 @@ k-mers to interpretable sequence motifs?
 This project focuses on **understanding these limitations**, not just
 running the pipeline.
 
+<p align="center">
+
+<img src="images/starting_point.png" width="450">
+</p>
+
+<p align="center">
+
+<em> Dense k-mer significance results illustrate the challenge of
+inferring interpretable sequence motifs directly from raw statistical
+outputs. </em>
+</p>
+
+------------------------------------------------------------------------
+
+## Choosing an appropriate statistical test
+
+<p align="center">
+
+<img src="images/ks_vs_mw_power.png" width="800">
+</p>
+
+<p align="center">
+
+<em> Power analysis shows that while Mann–Whitney performs well for mean
+shifts, the KS test retains sensitivity to broader distributional
+changes, motivating its use in this framework. </em>
+</p>
+
 ------------------------------------------------------------------------
 
 ## Why use simulation?
@@ -103,7 +131,33 @@ simulation.
 
 ------------------------------------------------------------------------
 
-![](images/sequence_logos.png)
+## Analysis pipeline overview
+
+<p align="center">
+
+<img src="images/pipeline_overview.png" width="400">
+</p>
+
+<p align="center">
+
+<em>Overview of the analysis pipeline from raw sequences and continuous
+traits to interpretable sequence motifs.</em>
+</p>
+
+#### From thousands of k-mers to interpretable sequence motifs
+
+<p align="center">
+
+<img src="images/sequence_logos.png" width="600">
+</p>
+
+<p align="center">
+
+<em>Recovered consensus motifs closely match the ground-truth motifs
+embedded during simulation.</em>
+</p>
+
+------------------------------------------------------------------------
 
 ## 📄 Full report (recommended reading)
 
