@@ -115,6 +115,8 @@ All data analyzed in this repository was generated using this simulation.
 
 ---
 
+![](images/sequence_logos.png)
+
 ## 📄 Full report (recommended reading)
 
 - A complete methodological report with figures, statistical analysis, and discussion  

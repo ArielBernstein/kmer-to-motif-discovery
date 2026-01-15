@@ -103,6 +103,8 @@ simulation.
 
 ------------------------------------------------------------------------
 
+![](images/sequence_logos.png)
+
 ## 📄 Full report (recommended reading)
 
 - A complete methodological report with figures, statistical analysis,
